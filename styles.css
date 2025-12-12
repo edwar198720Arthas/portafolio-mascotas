@@ -1,0 +1,146 @@
+/* Reseteo basico */
+* {
+    box-sizing: border-box; /* El ancho total que te de debe incluir el padding y el borde */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Aplica una tipografía a toda la pagina */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fondo suave para el portafolio */
+    color: #333 /* Color de texto oscuro */
+}
+
+/* Estilo para el encabezado */
+
+header {
+    background-color: #2c3e50; /* Un color oscuro para la barra superior */
+    color:white; /* Texto blanco para contrastar */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Estilo para el menu de navegacion */
+
+nav ul {
+    list-style: none; /* Elimina los puntos por defecto */
+    display: flex; /* ¡Aquí viene el poder! Organiza los ítems en fila */
+    justify-content: center; /* Centra los ítems horizontalmente */
+    gap: 20px; /* Espacio entre los ítems */
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    font-weight: bold;
+}
+
+/* Estilo para las secciones principales (Sobre mi, Proyectos, Contacto) */
+
+section {
+    padding: 40px 20px; /* 40px arriba/abajo, 20px izquierda/derecha */
+    margin: 30px auto; /* 30px arriba/abajo, 'auto' centra la caja horizontalmente */
+    max-width: 800px; /* Limita el ancho máximo para mejor lectura */
+    background-color: white;
+    border-radius: 8px; /* Bordes redondeados sutiles */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #2980b9; /* Un color de acento */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1; /* Línea de separación sutil */
+    padding-bottom: 10px;
+}
+
+/* Estilo para el efecto hover */
+
+nav a:hover {
+    color: #ce6119; /* Un color de acento brillante al pasar el mouse */
+    border-bottom: 2px solid #ce6119; /* Línea de decoración */
+}
+
+/* Estilos para el Formulario de Contacto */
+
+form div {
+    margin: 15px;
+}
+
+form label {
+    display: block; /* Asegura que la etiqueta esté en su propia línea */
+    margin: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; /* Indica que es un elemento interactivo */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+form button:hover {
+    background-color: #3498db;
+}
+
+/* Estilos Específicos para la Galería de Mascotas */
+
+#mascotas {
+    display: flex; /* Convierte los elementos internos en una fila */
+    flex-wrap: wrap; /* Permite que los elementos salten de línea si no caben */
+    justify-content: space-around; /* Distribuye el espacio entre las figuras */
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Estilo para cada figura/mascota */
+
+figure {
+    flex-basis: 300px; /* Tamaño base para cada figura */
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    background-color: white;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Estilo para el enlace de regreso en mascotas.html */
+
+.regresar-nav {
+    text-align: center;
+    padding-bottom: 20px;
+}
