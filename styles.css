@@ -58,6 +58,10 @@ section h2 {
     padding-bottom: 10px;
 }
 
+section ul li {
+    margin: 10px 12px;
+}
+
 /* Estilo para el efecto hover */
 
 nav a:hover {
