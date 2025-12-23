@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>portafolio</title>
+    <title>portafolio - Edwar Rios</title>
 </head>
 <body>
 
@@ -30,14 +30,20 @@
         <section id="Sobre-mi">
 
             <h2>Sobre mi</h2>
-            <p>Soy un ingeniero electrico que le gusta aprender de todo, y expandir mis conocimientos.</p>
+            <p id="bio-texto">Soy un ingeniero electrico que le gusta aprender de todo, y expandir mis conocimientos.</p>
+
+            <button id="btn-interactuar">¡Haz clic para conocerme más!</button>
+
+            <div id="info-extra" style="display: none; margin-top: 1rem; color: #2980b9; font-weight: bold;">
+                <p> Actualmente me estoy espesializando en desarrollo web con Riwi</p>
+            </div>
         </section>
 
         <section id="Proyectos">
 
             <h2>Proyectos</h2>
             <p>Todos estos son los proyectos que e realizado gracias a <b>Riwi</b>.</p>
-            <ul>
+            <ul class="protectos-lista">
                 <li><a href="#crudscope">Crudscope-html-mediapanel</a></li>
                 <li><a href="#WorldHub">WorldHub-Crisis-en-el-Atlas-de-Crudzaso</a></li>
                 <li><a href="#Galactic">Galactic-Library-Keeper</a></li>
@@ -66,10 +72,8 @@
                 <button type="submit">Enviar Mensaje</button>
             </form>
         </section>
-
-
-
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
